@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+img{
+    height: 640px;
+    width: 1216px;
+   overflow-x: hidden;
+}
+.btn{
+    cursor: pointer;
+    text-decoration: none;
+  color: black;
+}
+</style>
+<body>
+    <!-- CHAT BAR BLOCK -->
+   
+
+      <img src="https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg?w=900&t=st=1668830629~exp=1668831229~hmac=c6629518196a03ce8e91fb6c9b5dd782cf8c753e1e4d0c74064886812ad61899" alt="">
+  
+    ><div class="chat-bar-collapsible">
+        <div class="btn">
+            <button><a href="https://www.superbmytrip.com/cheapest-air-lines?gclid=EAIaIQobChMInZCd7MC5-wIV1n0rCh0xfAXCEAAYAiAAEgKklvD_BwE" target="_blank">Plane</a></button>
+            <button><a href="https://www.ixigo.com/trains?utm_source=Google&utm_medium=paid_search_google_trains&utm_campaign=train_search_desktop&gclid=EAIaIQobChMIvP-VoY26-wIVSCUrCh0gywLIEAAYASAAEgL8HfD_BwE" target="_blank">Train</a></button>
+            <button><a href="https://www.redbus.in/?gclid=EAIaIQobChMI_LHAsI26-wIViiQrCh14EQZMEAAYASAAEgIaJPD_BwE" target="_blank">Bus</a></button>
+            
+            </div>
+        <button id="chat-button" type="button" class="collapsible">Travi 
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+</html>
